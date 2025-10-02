@@ -20,39 +20,45 @@
          background-size: cover;
         }
         #red{
-         
         background-color:transparent;
         text-align: center 5px;
         color: white;
         font-size: 20px;
         border-radius: 10px;
-        width: 500px;
+        width: 550px;
         border: 2px solid black;
         padding: 20px;
         margin: 50px auto;
-        height: 400px;
+        height: 450px;
         justify-items: center;
+        padding-bottom: 20px;
+        }
+        input[type=submit]:hover{
+             background-color: black;
+             color: white;
+        }
+        input[type=submit]{
+            color: black;
+            background-color: white;
+            border-radius: 8px;
+            padding: 5px;
+            cursor: pointer;
         }
     </style>
 </head>
 <body>
     <div id="red">
     <form action="login.html">
-        <label for="name">first name</label>
-        <input type="text" name="name" id="name"><br><br>
-         <label for="name">last name</label> 
-         <input type="text" name="last" id="lname"><br><br>
-         <label for="email">E-Mail</label>
-         <input type="email" name="email" id="email"><br><br>
-         <label for="address">Address</label>
-        <textarea name="address" id="address" rows="4" cols="40"></textarea><br><br>
-        <label for="area">Area</label>
-        <input type="text" name="area" id="area"><br><br>
-        <label for="city">City</label>
-        <input type="text" id="city" name="city"><br><br>
-         <label for="num">Mobile Number</label>
-         <input type="number" name="number" id="num"><br><br>
-         <input type="submit" value="register">
+        <pre>
+    <label for="name">first name :  </label>  <input type="text" name="name" id="name" placeholder="Enter The Name"><br>
+    <!-- <label for="name">last name :  </label><input type="text" name="last" id="lname"><br> -->
+    <label for="email">E-Mail :    </label>    <input type="email" name="email" id="email"><br>
+    <label for="num">Mobile Number : </label><input type="number" name="number" id="num" placeholder="+91"><br>
+    <label for="address">Address : </label>      <textarea name="address" id="address" rows="4" cols="30"></textarea><br>
+    <label for="area">Area :        </label>  <input type="text" name="area" id="area"><br>
+    <label for="city">City :        </label>  <input type="text" id="city" name="city"><br>
+                 <input type="submit" value="register">
+         </pre>
     </form>
     </div>
 </body>
