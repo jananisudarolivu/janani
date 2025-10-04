@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    h1{
+        color: red;
+        text-align: center;
+        text-shadow: 2px 2px 2px rgb(233, 119, 119);
+    }
+    body{
+        /* background-image: url("https://c.ndtvimg.com/2022-12/cdopqpk_biryani_625x300_30_December_22.jpg?downsize=545:307"); */
+        /* background-image: url("https://wallpapers.com/images/featured-full/food-4k-1pf6px6ryqfjtnyr.jpg"); */
+        background-image: url("https://i0.wp.com/cms.babbel.news/wp-content/uploads/2019/06/StreetFood.png?resize=640%2C360");
+        background-repeat: no-repeat;
+        background-size: 100% ;
+        background-position: 0%;
+    }
+* {box-sizing: border-box;}
+.slideshow-container {
+  max-width: 600px;
+  position: relative;
+  margin: auto;
+}
+
+.mySlides {
+  display: none;
+}
+
+img {
+  width: 100%;
+  border-radius: 10px;
+ 
+  margin-top: 170px;
+  box-shadow: 3px 3px 3px white;
+}
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  padding: 12px;
+  color: white;
+  font-weight: bold;
+  font-size: 50px;
+  transition: 0.3s;
+  user-select: none;
+  border-radius: 3px;
+}
+
+.prev { left: 0; }
+.next { right: 0; }
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.6);
+}
+</style>
+</head>
+<body>
+  
+
+
+<div class="slideshow-container">
+
+  <div class="mySlides">
+    <img src="https://assets.simplotel.com/simplotel/image/upload/w_5000,h_3333/x_0,y_260,w_5000,h_2813,r_0,c_crop,q_80,fl_progressive/w_500,f_auto,c_fit/raj-park-hotel---chennai/Image_depicting_a_street_food_destination_with_several_stalls_kz7sfy">
+  </div>
+
+  <div class="mySlides">
+    <img src="https://content.jdmagicbox.com/v2/comp/chennai/z4/044pxx44.xx44.200205092149.x6z4/catalogue/taj-athan-atho-shop-ennore-chennai-street-food-vd3ydmgjqf.jpg">
+  </div>
+
+  <div class="mySlides">
+    <img src="https://i.ytimg.com/vi/CZM7m_fixj4/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLBPVyuQep7Waed9RlRISu8HcasSHw">
+  </div>
+
+</div>
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+<script>
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  slides[slideIndex-1].style.display = "block";  
+  setTimeout(showSlides, 2000); // Change every 2 seconds
+}
+function plusSlides(n) {
+  clearTimeout(slideTimer); // Stop auto temporarily when button clicked
+  slideIndex += n - 1; // Adjust index
+  showSlides();
+}
+
+showSlides(); 
+</script>
+    <!-- <h1><i>STREET FOOD</i></h1> -->
+</body>
+</html>
