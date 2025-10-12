@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <p id="d"></p>
+        
+        <script>
+
+    
+        //     let text = "Is this all there is?";
+        //    const pattern = /is/gi;
+        // let result = text.match(pattern);
+        // // console.log(result);
+        // document.getElementById("d").innerHTML=result;
+
+
+// const pattern = /cat/;
+// console.log(pattern.test("I have a cat."));   
+// console.log(pattern.test("I have a dog."));   
+
+
+        const pattern = /^[\w.-]+@[\w.-]+\.\w{2,}$/;
+
+let email = "@gmail.com";
+
+if (pattern.test(email)) {
+    console.log(" YES!!! UR MAIL IS VALID U CAN PROCEED");
+} else {
+  console.log("Invalid Email Address");
+}
+
+        </script>
+    </body>
+</html>
